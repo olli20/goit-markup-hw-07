@@ -268,6 +268,14 @@ summary {
   display: list-item;
 }
 
+.contact, .menu {
+  list-style: none;
+}
+
+.contact-link, .menu__link, .logo {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -303,14 +311,6 @@ body {
 
 img {
   display: block;
-}
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
 }
 
 .visually-hidden {
@@ -400,10 +400,6 @@ img {
   align-items: center;
 }
 
-.logo--light-theme {
-  color: #000000;
-}
-
 .menu {
   display: flex;
   margin-left: 93px;
@@ -424,17 +420,13 @@ img {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: #2196F3;
 }
-
 .menu__link--current {
   position: relative;
   color: #2196F3;
 }
-
 .menu__link--current::after {
   content: "";
   position: absolute;
@@ -473,9 +465,7 @@ img {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-link:hover,
-.contact-link:focus {
+.contact-link:hover, .contact-link:focus {
   color: #2196F3;
   fill: #2196F3;
 }
