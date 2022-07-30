@@ -1,0 +1,141 @@
+.order-form {
+    text-align: center;
+}
+
+.order-form__title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+}
+
+.order-form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.order-form__field:last-of-type {
+    margin-bottom: 20px;
+}
+
+.order-form__label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $addition-text-color;
+}
+
+.order-form__input {
+    min-height: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    transition: border-color 250ms $timing-function;
+}
+
+.order-form__input:focus,
+.order-form__comment:focus {
+    outline: none;
+    border-color: $brand-color;
+}
+
+.order-form__icon {
+    position: absolute;
+    left: 12px;
+    bottom: 50%;
+    transform: translateY(100%);
+    fill: $main-text-color;
+
+    transition: fill 250ms $timing-function;
+}
+
+.order-form__input:focus + .order-form__icon {
+    fill: $brand-color;
+}
+
+.order-form__comment {
+    resize: none;
+    min-height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.order-form__comment::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.agree-field {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+
+.checked-icon,
+.unchecked-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.checked-icon {
+    border-radius: 2px;
+    background-color: $brand-color;
+    fill: $global-white-color;
+    stroke: $global-white-color;
+
+    opacity: 0;
+
+    transition: opacity 250ms $timing-function;
+}
+
+.unchecked-icon {
+    background-color: $global-white-color;
+    fill: $main-text-color;
+
+    opacity: 1;
+
+    transition: opacity 250ms $timing-function,
+        fill 250ms $timing-function;
+}
+
+/* svgs change when checked, focus-within */
+
+.agree-input:checked ~ .checked-icon {
+    opacity: 1;
+}
+
+.agree-input:checked ~ .unchecked-icon {
+    opacity: 0;
+}
+
+.agree-field:focus-within > .unchecked-icon {
+    fill: $brand-color;
+}
+
+/* ================================= */
+
+.agree-label {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $addition-text-color;
+}
+
+.agree-label a {
+    color: $brand-color;
+}

@@ -132,7 +132,7 @@ img {
     align-items: center;
 }
 
-.logo-header-secondcolor {
+.logo--light-theme {
     color: var(--global-black-color);
 }
 
@@ -141,7 +141,7 @@ img {
     margin-left: 93px;
 } 
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -150,7 +150,7 @@ img {
     margin-left: 50px;
 } */
 
-.menu-link {
+.menu__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -164,17 +164,17 @@ img {
     transition: color 250ms var(--timing-function);
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.menu__link:hover,
+.menu__link:focus {
     color: var(--brand-color);
 }
 
-.current-link {
+.menu__link--current {
     position: relative;
     color: var(--brand-color);
 }
 
-.current-link::after {
+.menu__link--current::after {
     content: "";
     position: absolute;
     left: 0;
@@ -242,7 +242,7 @@ img {
 
 }
 
-.main-title {
+.hero__title {
     color: var(--global-white-color);
     text-align: center;
     margin-bottom: 30px;
@@ -321,13 +321,13 @@ img {
     transition: border 250px var(--timing-function);
 }
 
-.close-icon {
+.close-button__icon {
     fill: var(--global-black-color);
     transition: fill 250ms var(--timing-function);
 }
 
-.close-button:hover .close-icon,
-.close-button:focus .close-icon {
+.close-button:hover .close-button__icon,
+.close-button:focus .close-button__icon {
     fill: var(--brand-color);
 }
 
@@ -341,7 +341,7 @@ img {
     text-align: center;
 }
 
-.order-form-title {
+.order-form__title {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -349,20 +349,19 @@ img {
     letter-spacing: 0.03em;
 }
 
-.order-form-field {
+.order-form__field {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;  
-
+    margin-bottom: 10px;
     text-align: left;
 }
 
-.order-form-field:last-of-type {
+.order-form__field:last-of-type {
     margin-bottom: 20px;
 }
 
-.order-form-label {
+.order-form__label {
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 14px;
@@ -370,24 +369,23 @@ img {
     color: var(--addition-text-color);
 }
 
-.order-form-input {
+.order-form__input {
     min-height: 40px;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
-
     transition: border-color 250ms var(--timing-function);
 }
 
-.order-form-input:focus,
-.order-comment:focus {
+.order-form__input:focus,
+.order-form__comment:focus {
     outline: none;
     border-color: var(--brand-color);
 }
 
-.order-form-icon {
+.order-form__icon {
     position: absolute;
     left: 12px;
     bottom: 50%;
@@ -397,11 +395,11 @@ img {
     transition: fill 250ms var(--timing-function);
 }
 
-.order-form-input:focus + .order-form-icon {
+.order-form__input:focus + .order-form-icon {
     fill: var(--brand-color);
 }
 
-.order-comment {
+.order-form__comment {
     resize: none;
     min-height: 120px;
     padding: 12px 16px;
@@ -409,7 +407,7 @@ img {
     border-radius: 4px;
 }
 
-.order-comment::placeholder {
+.order-form__comment::placeholder {
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
@@ -487,7 +485,7 @@ img {
 
 
 /* =========== BENEFITS =========== */
-.benefits {
+.benefits__section {
     padding-bottom: 0;
 }
 
@@ -897,7 +895,7 @@ img {
     margin-right: 70px;
 }
 
-.logo-footer-secondcolor {
+.logo--dark-theme {
     color: var(--global-white-color);
 }
 
@@ -1034,7 +1032,7 @@ img {
 
 .subscription-button-icon {
     margin-left: 10px;
-    fill: var(--global-white-color);
+    fill: currentColor;
 }
 /* =========== / SUBSCRIPTION FORM =========== */
 
