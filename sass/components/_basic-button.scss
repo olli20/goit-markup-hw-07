@@ -22,4 +22,19 @@
     &:focus {
         background-color: $button-hover-color;
     }
+
+    &--flex {
+        display: flex;
+        align-items: center;
+    }           
+}
+
+.basic-button__right-icon {
+    margin-left: 10px;
+    fill: currentColor;
+}
+
+.basic-button__left-icon {
+    margin-right: 10px;
+    fill: currentColor;
 }

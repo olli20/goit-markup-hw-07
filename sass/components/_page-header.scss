@@ -3,7 +3,7 @@
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-container {
+.page-header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,15 +68,15 @@
     display: flex;
 }
 
-.contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.contact-icon {
+.contact__icon {
     margin-right: 10px;
 }
 
-.contact-link {
+.contact__link {
     @extend %link;
 
     display: flex;
