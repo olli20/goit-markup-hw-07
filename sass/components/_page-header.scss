@@ -14,6 +14,10 @@
     align-items: center;
 }
 
+.page-header__logo {
+     margin-right: 50px;
+    }
+
 .menu {
     @extend %list;
 

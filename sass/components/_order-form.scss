@@ -75,24 +75,24 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.agree-field {
+
+.checkbox {
     display: inline-block;
     position: relative;
     padding-left: 25px;
     margin-bottom: 30px;
-
     text-align: center;
 }
 
-.checked-icon,
-.unchecked-icon {
+.checkbox__checked-icon,
+.checkbox__unchecked-icon {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
 }
 
-.checked-icon {
+.checkbox__checked-icon {
     border-radius: 2px;
     background-color: $brand-color;
     fill: $global-white-color;
@@ -103,39 +103,38 @@
     transition: opacity 250ms $timing-function;
 }
 
-.unchecked-icon {
+.checkbox__unchecked-icon {
     background-color: $global-white-color;
     fill: $main-text-color;
 
     opacity: 1;
 
     transition: opacity 250ms $timing-function,
-        fill 250ms $timing-function;
+                fill 250ms $timing-function;
 }
 
 /* svgs change when checked, focus-within */
 
-.agree-input:checked ~ .checked-icon {
+.checkbox__input:checked ~ .checkbox__checked-icon {
     opacity: 1;
 }
 
-.agree-input:checked ~ .unchecked-icon {
+.checkbox__input:checked ~ .checkbox__unchecked-icon {
     opacity: 0;
 }
 
-.agree-field:focus-within > .unchecked-icon {
+.checkbox:focus-within > .checkbox__unchecked-icon {
     fill: $brand-color;
 }
 
-/* ================================= */
 
-.agree-label {
+.checkbox__label {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $addition-text-color;
 }
 
-.agree-label a {
+.checkbox__label a {
     color: $brand-color;
 }

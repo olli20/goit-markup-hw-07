@@ -3,7 +3,6 @@
 @import "./utils/placeholders";
 @import "./utils/reset";
 @import "./utils/utils";
-@import "./utils/section-styles";
 
 @import "./components/logo";
 @import "./components/basic-button";
@@ -22,7 +21,8 @@
 @import "./components/clients";
 
 
-// PAGE PORTFOLIO 
+// PAGE PORTFOLIO
+@import "./components/portfolio";
 @import "./components/filter-menu";
 @import "./components/gallery";
 

@@ -3,17 +3,25 @@
     background-color: $dark-background-color;
 }
 
-.page-footer__flex {
+.page-footer__container {
     display: flex;
     align-items: baseline;
 }
 
-.address__wrap {
+.media__subtitle {
+    @extend %subtitle;
+
+    margin-bottom: 20px;
+    color: $global-white-color;
+}
+
+.page-footer__address {
     margin-right: 70px;
 }
 
-.address {
-    margin-top: 20px;
+.address__logo {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .address__list {
@@ -34,23 +42,14 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    &--kyiv {
+    &--white {
         color: $global-white-color;
     }
 }
 
-.footer__subtitle {
-    margin-bottom: 20px;
-    color: $global-white-color;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
 .media__list {
     @extend %list;
+
     display: flex;
     justify-content: center;
     margin-right: 93px;
@@ -90,7 +89,14 @@
 
 /* =========== SUBSCRIPTION FORM =========== */
 
-.subscription-form {
+.subscription-form__subtitle {
+    @extend %subtitle;
+    
+    margin-bottom: 20px;
+    color: $global-white-color;
+}
+
+.subscription-form__main {
     display: flex;
     align-items: center;
 }

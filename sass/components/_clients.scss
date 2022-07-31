@@ -1,5 +1,10 @@
+.clients {
+    @extend %section;
+}
+
 .clients__title {
-    margin-bottom: 50px;
+    @extend %title;
+    margin-bottom: 50px;    
 }
 
 .clients__list {

@@ -1,8 +1,11 @@
 .team {
+    @extend %section;
     background-color: $light-background-color;
 }
 
 .team__title {
+    @extend %title;
+
     margin-bottom: 50px;
 }
 
