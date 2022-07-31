@@ -8,8 +8,10 @@
 @import "./components/logo";
 @import "./components/basic-button";
 
-
+// HEADER
 @import "./components/page-header";
+
+// PAGE INDEX 
 @import "./components/hero";
 @import "./components/modal";
 @import "./components/order-form";
@@ -19,4 +21,10 @@
 @import "./components/team";
 @import "./components/clients";
 
+
+// PAGE PORTFOLIO 
+@import "./components/filter-menu";
+@import "./components/gallery";
+
+// FOOTER
 @import "./components/page-footer";
