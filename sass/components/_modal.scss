@@ -45,14 +45,11 @@
 }
 
 .close-button {
+    @extend %center-flex-container;
+
     position: absolute;
     top: 8px;
     right: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 30px;
     height: 30px;
 
@@ -62,19 +59,19 @@
     cursor: pointer;
 
     transition: border 250px $timing-function;
+
+    &:focus-visible {
+        border: 1px solid $brand-color;
+        outline: none;
+    }
 }
 
 .close-button__icon {
     fill: $global-black-color;
     transition: fill 250ms $timing-function;
-}
 
-.close-button:hover .close-button__icon,
-.close-button:focus .close-button__icon {
-    fill: var(--brand-color);
-}
-
-.close-button:focus-visible {
-    border: 1px solid $brand-color;
-    outline: none;
+    .close-button:hover &,
+    .close-button:focus & {
+        fill: $brand-color;
+    }
 }

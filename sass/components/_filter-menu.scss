@@ -1,7 +1,9 @@
 .filter {
     @extend %list;
-    display: flex;
-    justify-content: center;
+    @extend %center-flex-container;
+}
+
+.portfolio__filter {
     margin-bottom: 50px;
 }
 

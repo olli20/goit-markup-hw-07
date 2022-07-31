@@ -1,5 +1,6 @@
 .benefits {
     @extend %section;
+
     padding-bottom: 0;
 }
 
@@ -12,18 +13,17 @@
 
 .benefits__item {
     width: calc((100% - 90px) / 4);
+
+    &:not(:nth-child(4n)) {
+        margin-right: 30px;
+    }
 }
 
-.benefits__item:not(:nth-child(4n)) {
-    margin-right: 30px;
-}
+.benefits__icon {
+    @extend %center-flex-container;
 
-.benefits__icon-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
     margin-bottom: 30px;
+    height: 120px;
     background-color: $light-background-color;
     border-radius: 4px;
 }

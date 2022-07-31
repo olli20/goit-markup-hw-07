@@ -1,9 +1,8 @@
-
 .page-header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.page-header__container {
+.page-header__flex-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,15 +13,14 @@
     align-items: center;
 }
 
-.page-header__logo {
-     margin-right: 50px;
-    }
+.page-nav__logo {
+    margin-right: 93px;
+}
 
 .menu {
     @extend %list;
 
     display: flex;
-    margin-left: 93px;
 }
 
 .menu__item:not(:last-child) {
@@ -31,11 +29,9 @@
 
 .menu__link {
     @extend %link;
+    @extend %hover-paddings;
 
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
     color: $main-text-color;
     font-weight: 500;
     font-size: 14px;
@@ -69,25 +65,22 @@
 
 .contact {
     @extend %list;
+
     display: flex;
+    align-items: center;
 }
 
 .contact__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.contact__icon {
-    margin-right: 10px;
-}
-
 .contact__link {
     @extend %link;
+    @extend %hover-paddings;
 
     display: flex;
     justify-content: left;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     color: $addition-text-color;
     fill: $addition-text-color;
@@ -103,5 +96,9 @@
         color: $brand-color;
         fill: $brand-color;
     }
+}
+
+.contact__icon {
+    margin-right: 10px;
 }
 

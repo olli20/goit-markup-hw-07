@@ -16,10 +16,10 @@
     flex-direction: column;
     margin-bottom: 10px;
     text-align: left;
-}
 
-.order-form__field:last-of-type {
-    margin-bottom: 20px;
+    &:last-of-type {
+        margin-bottom: 20px;
+    }
 }
 
 .order-form__label {
@@ -54,10 +54,10 @@
     fill: $main-text-color;
 
     transition: fill 250ms $timing-function;
-}
 
-.order-form__input:focus + .order-form__icon {
-    fill: $brand-color;
+    .order-form__input:focus + & {
+        fill: $brand-color;
+    }
 }
 
 .order-form__comment {
@@ -66,15 +66,14 @@
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-}
 
-.order-form__comment::placeholder {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    &::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
-
 
 .checkbox {
     display: inline-block;
@@ -127,14 +126,15 @@
     fill: $brand-color;
 }
 
-
 .checkbox__label {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $addition-text-color;
+
+    & a {
+        color: $brand-color;
+    }
 }
 
-.checkbox__label a {
-    color: $brand-color;
-}
+

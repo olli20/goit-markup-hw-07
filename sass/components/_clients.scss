@@ -30,10 +30,8 @@
 
 .clients__link {
     @extend %link;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %center-flex-container;
+    
     width: 100%;
     height: 100%;
     fill: $passive-icon-color;

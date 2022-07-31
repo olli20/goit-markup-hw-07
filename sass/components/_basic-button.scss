@@ -1,8 +1,9 @@
 .basic-button {
+    @extend %center-flex-container;
+
     min-height: 50px;
     min-width: 200px;
     padding: 10px 32px;
-    display: block;
     margin: 0 auto;
     background-color: $brand-color;
     color: $global-white-color;
@@ -21,20 +22,17 @@
     &:hover,
     &:focus {
         background-color: $button-hover-color;
+    }        
+}
+
+.basic-button__icon {
+    fill: currentColor;
+
+    &--right {
+        margin-left: 10px;
     }
 
-    &--flex {
-        display: flex;
-        align-items: center;
-    }           
-}
-
-.basic-button__right-icon {
-    margin-left: 10px;
-    fill: currentColor;
-}
-
-.basic-button__left-icon {
-    margin-right: 10px;
-    fill: currentColor;
+    &--left {
+        margin-right: 10px;
+    }
 }
