@@ -994,17 +994,8 @@ img {
   align-items: baseline;
 }
 
-.page-footer__media {
-  margin-right: 93px;
-}
-
-.media__subtitle {
-  margin-bottom: 20px;
-  color: #FFFFFF;
-}
-
 .page-footer__address {
-  margin-right: 70px;
+  margin-right: 87px;
 }
 
 .address__logo {
@@ -1014,6 +1005,11 @@ img {
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.media__subtitle {
+  margin-bottom: 20px;
+  color: #FFFFFF;
 }
 
 .address__link {
@@ -1055,12 +1051,16 @@ img {
 }
 
 /* =========== SUBSCRIPTION FORM =========== */
+.page-footer__subscription-form {
+  margin-left: auto;
+}
+
 .subscription-form__subtitle {
   margin-bottom: 20px;
   color: #FFFFFF;
 }
 
-.subscription-form__main {
+.subscription-form__body {
   display: flex;
   align-items: center;
 }

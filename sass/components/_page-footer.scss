@@ -8,20 +8,10 @@
     align-items: baseline;
 }
 
+
 // mix
-.page-footer__media {
-    margin-right: 93px;
-}
-
-.media__subtitle {
-    @extend %subtitle;
-
-    margin-bottom: 20px;
-    color: $global-white-color;
-}
-
 .page-footer__address {
-    margin-right: 70px;
+    margin-right: 87px;
 }
 
 .address__logo {
@@ -35,6 +25,13 @@
 
 .address__item:not(:last-child) {
     margin-bottom: 9px;
+}
+
+.media__subtitle {
+    @extend %subtitle;
+
+    margin-bottom: 20px;
+    color: $global-white-color;
 }
 
 .address__link {
@@ -89,6 +86,11 @@
 
 /* =========== SUBSCRIPTION FORM =========== */
 
+// mix
+.page-footer__subscription-form {
+    margin-left: auto;
+}
+
 .subscription-form__subtitle {
     @extend %subtitle;
     
@@ -96,7 +98,7 @@
     color: $global-white-color;
 }
 
-.subscription-form__main {
+.subscription-form__body {
     display: flex;
     align-items: center;
 }
