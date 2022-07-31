@@ -1,6 +1,9 @@
+.work__title {
+    margin-bottom: 50px;
+}
+
 .work__list {
     @extend %list;
-
     display: flex;
 }
 

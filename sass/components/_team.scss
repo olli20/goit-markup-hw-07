@@ -2,6 +2,10 @@
     background-color: $light-background-color;
 }
 
+.team__title {
+    margin-bottom: 50px;
+}
+
 .team__list {
     @extend %list;
 
