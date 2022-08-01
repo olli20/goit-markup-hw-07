@@ -75,6 +75,14 @@
     }
 }
 
+
+// mix
+.order-form__basic-button {
+    margin: 0 auto;
+}
+
+// CUSTOM CHECKBOX
+
 .checkbox {
     display: inline-block;
     position: relative;
@@ -134,5 +142,6 @@
         color: getColor('accent');
     }
 }
+
 
 
