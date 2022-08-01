@@ -5,8 +5,8 @@
     min-width: 200px;
     padding: 10px 32px;
     margin: 0 auto;
-    background-color: $brand-color;
-    color: $global-white-color;
+    background-color: getColor('accent');
+    color: getColor('white');
     font-weight: 700;
     font-size: 16px;
     line-height: 1.86;
@@ -21,7 +21,7 @@
 
     &:hover,
     &:focus {
-        background-color: $button-hover-color;
+        background-color: getColor('basic-button-hover');
     }        
 }
 

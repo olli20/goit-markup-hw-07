@@ -28,7 +28,7 @@
 
     width: 528px;
     padding: 40px;
-    background-color: $global-white-color;
+    background-color: getColor('white');
     border-radius: 4px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -53,23 +53,23 @@
 
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    background-color: $global-white-color;
+    background-color: getColor('white');
     cursor: pointer;
 
     transition: border 250px $timing-function;
 
     &:focus-visible {
-        border: 1px solid $brand-color;
+        border: 1px solid getColor('accent');
         outline: none;
     }
 }
 
 .close-button__icon {
-    fill: $global-black-color;
+    fill: getColor('black');
     transition: fill 250ms $timing-function;
 
     .close-button:hover &,
     .close-button:focus & {
-        fill: $brand-color;
+        fill: getColor('accent');
     }
 }

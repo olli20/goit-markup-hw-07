@@ -6,13 +6,13 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: $brand-color;
+    color: getColor('accent');
     
     &--light-theme {
-        color: $global-black-color;
+        color: getColor('black');
     }
 
     &--dark-theme {
-        color: $global-white-color;
+        color: getColor('white');
     }
 }

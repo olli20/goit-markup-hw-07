@@ -15,8 +15,8 @@
 .filter__button {
     padding: 6px 22px;
 
-    color: $main-text-color;
-    background-color: $light-background-color;
+    color: getColor('text-main');
+    background-color: getColor('background-light');
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -33,15 +33,15 @@
 
     &:hover,
     &:focus {
-            color: $global-white-color;
-            background-color: $brand-color;
+            color: getColor('white');
+            background-color: getColor('accent');
             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-                0px 1px 2px rgba(0, 0, 0, 0.08),
-                0px 2px 2px rgba(0, 0, 0, 0.12);
+                        0px 1px 2px rgba(0, 0, 0, 0.08),
+                        0px 2px 2px rgba(0, 0, 0, 0.12);
         }
         
     &--current {
-        color: $global-white-color;
-        background-color: $brand-color;
+        color: getColor('white');
+        background-color: getColor('accent');
     }
 }

@@ -45,7 +45,7 @@
     height: 100%;
     padding: 63px 24px;
 
-    color: $global-white-color;
+    color: getColor('white');
     background-color: rgba(33, 150, 243, 0.9);
     font-size: 18px;
     line-height: 1.56;
@@ -70,7 +70,7 @@
 
 .gallery__project-title {
     margin-bottom: 4px;
-    color: $main-text-color;
+    color: getColor('text-primary');
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -78,8 +78,8 @@
 }
 
 .gallery__project-type {
+    color: getColor('text-secondary');
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.03em;
-    color: $addition-text-color;
 }

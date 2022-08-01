@@ -2,9 +2,7 @@
     @extend %section;
 }
 
-.clients__title {
-    @extend %title;
-    
+.clients__title {   
     margin-bottom: 50px;    
 }
 
@@ -35,19 +33,19 @@
     
     width: 100%;
     height: 100%;
-    fill: $passive-icon-color;
+    fill: getColor('icon-passive');
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
-    border-color: #AFB1B8;
+    border-color: getColor('icon-passive');
 
     transition: border-color 250ms $timing-function,
                 fill 250ms $timing-function;
 
     &:hover,
     &:focus {
-        border-color: $brand-color;
-        fill: $brand-color;
+        border-color: getColor('accent');
+        fill: getColor('accent');
     }
 }
 

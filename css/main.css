@@ -892,7 +892,6 @@ img {
 
 .filter__button {
   padding: 6px 22px;
-  color: #212121;
   background-color: #F5F4FA;
   font-weight: 500;
   font-size: 16px;
@@ -976,10 +975,10 @@ img {
 }
 
 .gallery__project-type {
+  color: #757575;
   font-size: 16px;
   line-height: 1.86;
   letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .page-footer {
@@ -1012,6 +1011,7 @@ img {
 
 .address__link {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

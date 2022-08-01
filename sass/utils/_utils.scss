@@ -1,7 +1,7 @@
 body {
     font-family: $primary-font;
-    background-color: $global-white-color;
-    color: $main-text-color;
+    background-color: getColor('white');
+    color: getColor('text-primary');
 }
 
 img {

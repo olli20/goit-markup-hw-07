@@ -27,7 +27,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: $addition-text-color;
+    color: getColor('text-secondary');
 }
 
 .order-form__input {
@@ -43,7 +43,7 @@
 .order-form__input:focus,
 .order-form__comment:focus {
     outline: none;
-    border-color: $brand-color;
+    border-color: getColor('accent');
 }
 
 .order-form__icon {
@@ -51,12 +51,12 @@
     left: 12px;
     bottom: 50%;
     transform: translateY(100%);
-    fill: $main-text-color;
+    fill: getColor('text-primary');
 
     transition: fill 250ms $timing-function;
 
     .order-form__input:focus + & {
-        fill: $brand-color;
+        fill: getColor('accent');
     }
 }
 
@@ -93,9 +93,9 @@
 
 .checkbox__checked-icon {
     border-radius: 2px;
-    background-color: $brand-color;
-    fill: $global-white-color;
-    stroke: $global-white-color;
+    background-color: getColor('accent');
+    fill: getColor('white');
+    stroke: getColor('white');
 
     opacity: 0;
 
@@ -107,8 +107,8 @@
 }
 
 .checkbox__unchecked-icon {
-    background-color: $global-white-color;
-    fill: $main-text-color;
+    background-color: getColor('white');
+    fill: getColor('text-primary');
 
     opacity: 1;
 
@@ -120,7 +120,7 @@
         }
     
     .checkbox:focus-within > & {
-        fill: $brand-color;
+        fill: getColor('accent');
     }
 }
 
@@ -128,10 +128,10 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: $addition-text-color;
+    color: getColor('text-secondary');
 
     & a {
-        color: $brand-color;
+        color: getColor('accent');
     }
 }
 

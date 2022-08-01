@@ -23,18 +23,16 @@
 
     margin-bottom: 30px;
     height: 120px;
-    background-color: $light-background-color;
+    background-color: getColor('background-light');
     border-radius: 4px;
 }
 
 .benefits__subtitle {
-    @extend %subtitle;
-
     margin-bottom: 10px;
 }
 
 .benefits__descriptor {
-    color: $addition-text-color;
+    color: getColor('text-secondary');
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;

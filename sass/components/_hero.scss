@@ -6,7 +6,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-color: $light-background-color;
+    background-color: getColor('background-light');
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -24,7 +24,7 @@
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    color: $global-white-color;
+    color: getColor('white');
     text-align: center;
     text-transform: uppercase;
 }

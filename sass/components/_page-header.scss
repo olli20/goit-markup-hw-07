@@ -35,18 +35,18 @@
     @extend %link-paddings;
 
     display: block;
-    color: $main-text-color;
+    color: getColor('text-primary');
 
     transition: color 250ms $timing-function;
 
     &:hover,
     &:focus {
-        color: $brand-color;
+        color: getColor('accent');
     }
 
     &--current {
         position: relative;
-        color: $brand-color;
+        color: getColor('accent');
     }
 
     &--current::after {
@@ -58,7 +58,7 @@
         width: 100%;
         height: 4px;
         border-radius: 2px;
-        background-color: $brand-color;
+        background-color: getColor('accent');
     }
 }
 
@@ -84,8 +84,8 @@
     justify-content: left;
     align-items: center;
 
-    color: $addition-text-color;
-    fill: $addition-text-color;
+    color: getColor('text-secondary');
+    fill: getColor('text-secondary');
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -95,8 +95,8 @@
 
     &:hover,
     &:focus {
-        color: $brand-color;
-        fill: $brand-color;
+        color: getColor('accent');
+        fill: getColor('accent');
     }
 }
 
