@@ -3,14 +3,12 @@
 }
 
 .work__title {
-    @extend %title;
-    
+    @extend %title; 
     margin-bottom: 50px;
 }
 
 .work__list {
     @extend %list;
-
     display: flex;
 }
 
@@ -25,7 +23,6 @@
 
 .work__subtitle {
     @extend %subtitle;
-
     position: absolute;
     bottom: 0;
     left: 0;
