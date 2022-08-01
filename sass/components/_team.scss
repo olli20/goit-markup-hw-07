@@ -1,15 +1,18 @@
 .team {
-    @extend %section;   
+    @extend %section;
+    
     background-color: $light-background-color;
 }
 
 .team__title {
     @extend %title;
+
     margin-bottom: 50px;
 }
 
 .team__list {
     @extend %list;
+    
     display: flex;
 }
 
@@ -68,6 +71,7 @@
 
 .team-media__link {
     @extend %link;
+
     display: flex;
     align-items: center;
     justify-content: center;

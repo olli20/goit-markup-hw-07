@@ -25,18 +25,18 @@
 .order-form__label {
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.01em;
     color: $addition-text-color;
 }
 
 .order-form__input {
     min-height: 40px;
+    padding-left: 42px;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 42px;
     transition: border-color 250ms $timing-function;
 }
 
@@ -100,6 +100,10 @@
     opacity: 0;
 
     transition: opacity 250ms $timing-function;
+
+    .checkbox__input:checked ~ & {
+        opacity: 1;
+    }
 }
 
 .checkbox__unchecked-icon {
@@ -110,20 +114,14 @@
 
     transition: opacity 250ms $timing-function,
                 fill 250ms $timing-function;
-}
 
-/* svgs change when checked, focus-within */
-
-.checkbox__input:checked ~ .checkbox__checked-icon {
-    opacity: 1;
-}
-
-.checkbox__input:checked ~ .checkbox__unchecked-icon {
-    opacity: 0;
-}
-
-.checkbox:focus-within > .checkbox__unchecked-icon {
-    fill: $brand-color;
+    .checkbox__input:checked ~ & {
+            opacity: 0;
+        }
+    
+    .checkbox:focus-within > & {
+        fill: $brand-color;
+    }
 }
 
 .checkbox__label {

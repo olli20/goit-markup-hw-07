@@ -3,7 +3,7 @@
     background-color: $dark-background-color;
 }
 
-.page-footer__container {
+.page-footer__flex-container {
     display: flex;
     align-items: baseline;
 }
@@ -38,7 +38,6 @@
     @extend %link;
 
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
